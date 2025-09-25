@@ -1,15 +1,23 @@
 p {
     color: rgb(31, 40, 172);
-    background-color: rgb(134, 170, 194);
-    font-size: 25px;
+    background-color: (pink);
+    font-size: 15px;
     padding: 10px;
+}
+#sonya{
+    display: block;
+    color: rgb(31, 40, 172);
+    background-color: (rgb(186, 46, 69));
+    font-size: 25px;
+    padding: 20px;
+    border: #647eb7;
 }
 .lalala {
    width:  200px;
    height: 200px;
    border-radius: 15px;
    border: 5px solid darkblue;
-padding: 10px;
+   padding: 10px;
 }
 .cof {
     width:  200px;
@@ -24,11 +32,23 @@ padding: 10px;
    border: 5px solid darkblue;
 }
 #ffff {
-   background: rgba(134, 170, 194, 0.8);
-   background: linear-gradient(rgb(192, 248, 255),pink,rgb(62, 125, 150));
+   background: rgba(122, 176, 202, 0.8);
+   background: linear-gradient(rgb(228, 233, 233),pink,rgb(62, 125, 150));
 }
 #sof {
-    background-color:rgb(134, 170, 194);
+    background-color:rgb(176, 200, 216); 
+}
+#kn{
+    font-size: 25px;
+   font-weight: bold;
+   text-align: center;
+   background: linear-gradient(to right, #81C3DE,#568FB3,#3948B8);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+   display: block;
+   text-align: center; 
 }
 a{
     text-decoration:solid;
@@ -54,6 +74,7 @@ p{
     hyphens: auto;
     text-overflow: ellipsis;
     width: 250px;
+     text-align: center; 
 }
 .zitats1{
    font-size: 25px;
@@ -89,7 +110,29 @@ p{
     text-decoration: none;
     padding: 10px 20px;
     margin-right: 8px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-weight: bold;
     transition: background 0.3s;
+}
+
+h1{
+    display: inline-block;
+   text-align: center; 
+}
+
+.knopka{
+  font-size: 35px;
+  background: linear-gradient(#B1D2E6,#DE7CA5,#B33292);
+  color: antiquewhite;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+}
+.knopka:hover{
+    background:rgb(146, 115, 232);
+}
+.knop{
+   text-align: center; 
+   margin-top: 15px;
 }
