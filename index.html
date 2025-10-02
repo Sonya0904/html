@@ -6,13 +6,14 @@
   </head>
    <body id="ffff">
      <header id="sof">
+     <nav style="position: fixed; top:0;left:0;width:100%;background: lightblue;">
        <h1 id="kn">Сайт про меня</h1>
        <nav class="header__menu">
-          
           <a class="header__menu-link" href="#about">Обо мне</a>
           <a class="header__menu-link" href="#contacts">Контакты </a>
           <a class="header__menu-link" href="#text">Текст</a>
           <a class="header__menu-link" href="#zitati">Цитаты</a>
+        </nav>
        </nav>
        <hr>
       </header>
@@ -38,10 +39,11 @@
                 class="pppp"
                 />
         </section>
-        <div></div>
-        
-        </div>
-
+      <div class="box"> Сегодня у меня хороший день</div>
+    <div class="parent">
+      Родитель (relative)
+      <div class="child"> Ребенок (absolute)</div>
+    </div>
         <section id="text">
            <p>
         <br><br><br><mark><b><i><u>Как содержать мадагаскарских тараканов дома</u></i></b></mark><br>
@@ -64,6 +66,11 @@
 Правильный уход за мадагаскарскими тараканами, проживающими в домашних условиях, основывается на обеспечении<br> 
 насекомых питанием и водой, а также регулярном уходе за контейнером, где они обитают.
 
+    <div class="row">
+      <div class="box">A</div>
+      <div class="box abs">B (absolute)</div>
+      <div class="box">C</div>
+    </div>
 
   <li>
     1
@@ -79,6 +86,11 @@
     </ul>
     
   </li>
+
+  <div class="card">
+    Карточка
+    <span class="badge"> NEW</span>
+  </div>
 
 Чем кормить мадагаскарских тараканов в домашних условиях
 Мадагаскарские тараканы питаются разными продуктами. <br>
@@ -123,6 +135,9 @@
             </p>
       </section>
        
+      <button class="scroll-top"> Наверх</button>
+      
+      
 
    <div style="display: block;" class="zitats1">
     Бессмысленно осмысливать смысл неосмысненныеми мыслями.
@@ -137,5 +152,27 @@
     <footer>
       <p>Бе-бе-бе</p>
     </footer> 
+
+    <div class="flexcontainer">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item special">2 (важный)</div>
+      <div class="item1">3</div>
+      <div class="item1">4</div>
+    </div>
+
+    <div class="products">
+      <div class="card">Товар 1</div>
+      <div class="card">Товар 2</div>
+      <div class="card big">Товар 3</div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+
   </body>
 </html>

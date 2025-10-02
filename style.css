@@ -1,3 +1,5 @@
+
+
 p {
     color: rgb(31, 40, 172);
     background-color: (pink);
@@ -110,9 +112,19 @@ p{
     text-decoration: none;
     padding: 10px 20px;
     margin-right: 8px;
-    border-radius: 10px;
+    border-radius: 40px;
     font-weight: bold;
     transition: background 0.3s;
+}
+
+.box{
+    margin: 10px;
+    background: lightblue;
+    border: 2px solid green;
+
+    position: relative;
+    top: 20px;
+    left: 110px;
 }
 
 h1{
@@ -134,5 +146,122 @@ h1{
 }
 .knop{
    text-align: center; 
-   margin-top: 15px;
+   margin-top: 110px;
+}
+
+.row{
+    display: flex; gap: 12px;
+    position: relative;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    background: #DE7CA5; 
+    border: 2px solid #B33292;
+}
+.abs{
+    position: absolute; 
+    top: 0;
+}
+
+.parent{
+    width: 185px;
+    height: 75px;
+    position: relative;
+    background: lightblue;
+    margin-top: 40px;
+}
+.child{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: coral;
+}
+
+.card{
+    position: relative;
+    width: 260px;
+    padding: 16px;
+    background: #647eb7;
+    border: 2px solid #568FB3;
+    border-radius: 10px;
+}
+
+.badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #71a9cc;
+    color: burlywood;
+    padding: 4px 8px;
+    border-radius: 9999px;
+}
+
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #B1D2E6;
+    color: antiquewhite;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.flexcontainer{
+    flex-direction: column;
+    display: flex;
+    border: #81C3DE;
+    padding: 10px;
+    gap: 10px; /*расстояние между карточками*/
+}
+
+.item{
+    background: #e7b6ca;
+    border: 1px solid rgb(173, 173, 226);
+    padding: 20px;
+    font-size: 20px;
+    flex-basis: 20%;
+}
+
+.container{
+    display: flex;
+    gap: 10px; /*расстояние между карточками*/
+}
+
+.item1{
+    flex: 1 1 80px;
+    padding: 20px;
+    background: #e7b6ca;
+    border: 1px solid rgb(173, 173, 226);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+.special{
+    order: -1;
+    background: #e7b6ca;
+}
+
+.products{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    flex: 1 1 150px;
+    background: lightsteelblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.big{
+    flex-grow: 5;
+    align-self: flex-end;
+    background: rgb(107, 145, 194);
 }
