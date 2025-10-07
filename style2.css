@@ -1,0 +1,127 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    background: #95bbe1;
+    padding: 10px;
+}
+
+.header__menu-link{
+    display: inline-block;
+    background: #9db5e8;
+    color: rgb(89, 100, 109);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.header__menu-link:hover{
+     background: #d9aff3;
+}
+
+h1{
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    background: #ffbcbc;
+}
+
+.card{
+   margin-top: 120px;
+   flex: 1 1 220px;
+   background: #95bbe1;
+   border: 2px solid #38bdf8;
+   border-radius: 12px;
+   padding: 16px;
+   text-align: center;
+   font-size: 600;
+}
+
+.card--big{
+    flex-grow: 2;
+    background: #9dcbe8;
+    border-color: antiquewhite;
+}
+
+.knopka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background: #fee8e8;
+}
+
+.btn{
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 0;
+    background: #fee8e8;
+    color: #621a1a;
+    font: 600 16px/1 system-ui, Arial;
+    cursor: pointer;
+}
+.btn:hover{background: #accced;}
+
+.container{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+}
+
+.item{
+   background: #d9aff3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 50px;
+    gap: 10px;
+}
+
+.header{ grid-area: header; background: #fee8e8;}
+.sidebar{ grid-area: sidebar; background: #95bbe1;}
+.main{grid-area: main; background: #d9aff3;}
+.footer{grid-area: footer; background: #9dcbe8;}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+}
+
+.square{
+    width: 50px; height: 50px;
+}
+.square:nth-child(even){ background: black;}
+.square:nth-child(odd){background: white;}
+
+.square:nth-child(odd) { background: white; }
+.square:nth-child(even) { background: black; }
+
+
+.square:nth-child(n + 1):nth-child(-n + 8):nth-child(odd),
+.square:nth-child(n + 9):nth-child(-n + 16):nth-child(even),
+.square:nth-child(n + 17):nth-child(-n + 24):nth-child(odd),
+.square:nth-child(n + 25):nth-child(-n + 32):nth-child(even),
+.square:nth-child(n + 33):nth-child(-n + 40):nth-child(odd),
+.square:nth-child(n + 41):nth-child(-n + 48):nth-child(even),
+.square:nth-child(n + 49):nth-child(-n + 56):nth-child(odd),
+.square:nth-child(n + 57):nth-child(-n + 64):nth-child(even) {
+  filter: invert(1);
+}
